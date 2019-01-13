@@ -1,7 +1,14 @@
 bokeh==1.0.2
+certifi==2018.11.29
+chardet==3.0.4
+Click==7.0
 cycler==0.10.0
+Cython==0.29.2
+Flask==1.0.2
 geographiclib==1.49
 geopy==1.18.1
+idna==2.8
+itsdangerous==1.1.0
 Jinja2==2.10
 kiwisolver==1.0.1
 MarkupSafe==1.1.0
@@ -14,5 +21,9 @@ pyparsing==2.3.0
 python-dateutil==2.7.5
 pytz==2018.7
 PyYAML==3.13
+requests==2.21.0
 six==1.12.0
+torch==1.0.0
 tornado==5.1.1
+urllib3==1.24.1
+Werkzeug==0.14.1
