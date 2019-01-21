@@ -1,5 +1,77 @@
 <head>
     <title>Weather predictor</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+      <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
 </head>
 <body>
+    <div id="app">
+          
+            <!-- <v-parallax src=%%url_for('static', filename='simp.png')%% height="100%"> -->
+            <div
+            id="e3"
+            style="width: 100%; margin: auto;"
+            absolute
+            manual-scroll
+            class="grey lighten-3">
+                <v-toolbar
+                  color="cyan"
+                  dark>
+                  <v-toolbar-side-icon></v-toolbar-side-icon>
+                  <v-toolbar-title>Weather predictor</v-toolbar-title>
+                  <v-spacer></v-spacer>
+                  <v-btn icon>
+                    <v-icon>search</v-icon>
+                  </v-btn>
+                </v-toolbar>
+            </div>
+                      <v-container
+                        fluid
+                        grid-list-lg>
+                        <v-layout row wrap>
+                          <v-flex xs12>
+                            <v-card color="blue-grey darken-2" class="white--text">
+                              <v-card-title primary-title>
+                                <div>
+                                  <div class="headline">Your city</div>
+                                  <span>There are some some weather data</span>
+                                </div>
+                              </v-card-title>
+                              <v-card-actions>
+                                <v-btn flat dark>More</v-btn>
+                              </v-card-actions>
+                            </v-card>
+                          </v-flex>
+
+
+        <!-- </v-parallax> -->
+     
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+            menuVisible: false
+        }
+      })
+    </script>
 </body>
